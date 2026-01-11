@@ -1,0 +1,135 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .navbar-toggler{
+        border-color: #f4d941;
+    }
+
+
+    .navbar {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(244, 217, 65, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+    .header_nav {
+        .navbar-nav {
+            text-align: end;
+            margin-top: 20px;
+        }
+    }
+
+    .banner_img {
+        margin-left: 10px;
+    }
+
+    .banner_text {
+        h2 {
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .hero_text h5 {
+        font-size: 20px;
+
+        span {
+            font-size: 16px;
+
+        }
+    }
+
+    .project_box {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .about_sec {
+        background-position: 50% 100%;
+
+    }
+
+    .about_text {
+        margin-bottom: 150px;
+    }
+
+    .about_margin {
+        margin-left: 0px;
+    }
+
+    .responsive_circle {
+        margin-left: 35px;
+        margin-top: 40px;
+    }
+
+    .responsive_circlet {
+        margin-left: 35px;
+        margin-top: 120px;
+    }
+
+    .common_heading {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
+    .project_link {
+        a {
+            font-size: 11px;
+            padding: 12px 18px;
+        }
+    }
+
+
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .skill{
+        transform: translateX(30%);
+    }
+
+    .skillc_name{
+       margin-left: 40px;
+    }
+    .skillc_name2{
+        margin-left: 60px;
+    }
+    .skillc_name3{
+        margin-left: 70px;
+    }
+    
+    .project_link{
+        a{
+            padding: 20px 40px;
+        }
+    }
+
+    .responsive_circle{
+        margin-top: 50px;
+    }
+
+    .responsive_circlet{
+        margin-top: 90px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
