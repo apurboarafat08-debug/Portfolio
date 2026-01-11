@@ -2,14 +2,14 @@
 /* // No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 320px) and (max-width: 575px) {
 
-    .navbar-toggler{
+    .navbar-toggler {
         border-color: #f4d941;
     }
 
 
     .navbar {
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(244, 217, 65, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(244, 217, 65, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
 
     .header_nav {
         .navbar-nav {
@@ -93,37 +93,109 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .skill{
+    .skill {
         transform: translateX(30%);
     }
 
-    .skillc_name{
-       margin-left: 40px;
+    .skillc_name {
+        margin-left: 40px;
     }
-    .skillc_name2{
+
+    .skillc_name2 {
         margin-left: 60px;
     }
-    .skillc_name3{
+
+    .skillc_name3 {
         margin-left: 70px;
     }
-    
-    .project_link{
-        a{
+
+    .project_link {
+        a {
             padding: 20px 40px;
         }
     }
 
-    .responsive_circle{
+    .responsive_circle {
         margin-top: 50px;
     }
 
-    .responsive_circlet{
+    .responsive_circlet {
         margin-top: 90px;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .outer {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: -6px -6px 10px -1px rgba(0, 0, 0, 0.15),
+            6px 6px 10px -1px rgba(255, 255, 255, 0.7);
+        padding: 20px;
+
+    }
+
+    .inner {
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+            inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+            -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+            0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    }
+
+    circle {
+        cx: 75;
+        cy: 75;
+        r: 65;
+        stroke-width: 19;
+        stroke-dasharray: 480;
+        stroke-dashoffset: 480;
+    }
+
+    .circle2 {
+        animation: animsecond 2s normal forwards !important;
+    }
+
+    .circle3 {
+        animation: animthird 2s normal forwards !important;
+    }
+
+    .circle4 {
+        animation: animfourth 2s normal forwards !important;
+    }
+
+    @keyframes anim {
+        100% {
+            stroke-dashoffset: 140;
+        }
+    }
+
+    @keyframes animfourth {
+        100% {
+            stroke-dashoffset: 228;
+        }
+    }
+
+    @keyframes animthird {
+        100% {
+            stroke-dashoffset: 120;
+        }
+    }
+
+    @keyframes animsecond {
+        100% {
+            stroke-dashoffset: 100;
+        }
+    }
+
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {}
